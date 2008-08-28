@@ -33,6 +33,7 @@
     <object-name>cacheG</object-name>
     <object-name>axeD</object-name>
     <object-name>cacheD</object-name>
+    <object-name>tourverriere</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -65,6 +66,7 @@
     <object-name>roueD</object-name>
     <object-name>roueA</object-name>
     <object-name>lampes</object-name>
+    <object-name>tourverriere</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -444,6 +446,7 @@
   <animation>
     <type>rotate</type>
     <object-name>verriere</object-name>
+    <object-name>tourverriere</object-name>
     <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry>
