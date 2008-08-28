@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Long-EZ/long-ez-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Long-EZ/Sounds/long-ez-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Long-EZ/Models/long-ez.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Rutan Long EZ</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <line>______________________________________________</line>
+    </help>
+
+    <menubar include="Dialogs/long-ez-menu.xml"/>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <engine>
+        <mixture archive="y"> 0.65 </mixture>
+      </engine>
+    </engines>
+  </controls> 
+
+  <input>
+    <keyboard include="Nasal/long-ez-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <longez>
+      <file>Aircraft/Long-EZ/Nasal/doors.nas</file>
+      <file>Aircraft/Long-EZ/Nasal/light.nas</file>
+<!--  <file>Aircraft/Long-EZ/Nasal/long-ez.nas</file> -->
+      <file>Aircraft/Long-EZ/Nasal/liveries.nas</file>
+   </longez>
+  </nasal>
+  
+</PropertyList>

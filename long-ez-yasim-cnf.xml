@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList include="long-ez-base.xml">
+
+  <sim>
+
+    <description>Long EZ (YASim)</description>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">long-ez-yasim</aero>
+
+  </sim>
+ 
+</PropertyList>

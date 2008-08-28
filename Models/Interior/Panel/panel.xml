@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.198 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.018 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+
+  <!-- KI206 -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m>  0.088 </y-m>
+      <z-m>  0.246 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.168 </y-m>
+      <z-m> 0.235 </z-m>
+    </offsets>
+  </model>
+
+  <!-- HDG -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m>  0.114 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Toutes les visses -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/full-vis.xml</path>
+  </model> -->
+
+</PropertyList>
+

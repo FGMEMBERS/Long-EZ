@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.229 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.229 </y-m>
+      <z-m>  0.169 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.166 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.166 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.169 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.077 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.077 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.058 </y-m>
+      <z-m>  0.181 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.014 </y-m>
+      <z-m> 0.232 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.014 </y-m>
+      <z-m> 0.232 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.056 </y-m>
+      <z-m> 0.278 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.049 </y-m>
+      <z-m> 0.224 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.120 </y-m>
+      <z-m> 0.278 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.120 </y-m>
+      <z-m> 0.214 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.145 </y-m>
+      <z-m> 0.256 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.145 </y-m>
+      <z-m> 0.214 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.191 </y-m>
+      <z-m> 0.256 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.191 </y-m>
+      <z-m> 0.214 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.146 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.148 </y-m>
+      <z-m>  0.091 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.076 </y-m>
+      <z-m>  0.146 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.076 </y-m>
+      <z-m>  0.083 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
