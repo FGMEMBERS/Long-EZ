@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -74,7 +74,7 @@
   <!-- Toutes les visses -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/full-vis.xml</path>
-  </model> -->
+  </model>
 
 </PropertyList>
 
