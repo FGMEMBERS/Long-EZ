@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
-	Rutan Long EZ : 2008 Emmanuel BARANGER 
-	Yasim model in progress by Daniel Mortara <daniel.mortara@gmail.com>
-	Model taken from TERF CD and Open-EZ diagrams
--->
-<!-- 750 lb for the standard and empty aircraft -->
+    Rutan Long EZ : 2008 Emmanuel BARANGER 
+    Yasim model: work in progress by Daniel Mortara <daniel.mortara@gmail.com>
+    Flight model information from TERF CD and Open-EZ diagrams
+    version 0.3
 
+    NOTE: The (x,y,z) coordinates of this FDM are based on the 3D model where 
+          (0,0,0) in 3D is (0,0,0) in FDM but with the following mapping of 
+          axes from 3D model to FDM (YASim) 3D X axe is the FDM -X, 3D Y axe 
+          is FDM -Y and the Z axe is the same.
+
+    The Long-EZ plans uses a distinct origing for coordinates and the 
+          imperial system instead of the metric system. The good news is that 
+          the Z (W.L.) and Y (B.L.) axes are the same and the X (F.S.) axe of 
+          the plans is as the 3D axe  ( X in plans (same as 3D) is -X in FDM )
+          For instance the main left wheel centre is by plans at X or F.S. 110.5'
+          and Z or WL -22 inch (x,z)=(110.5,-22) or in the metric system this is 
+          (x,z)=(2.8509,-0.5676) m. In the 3D model the same wheel is at 
+          (x,z)=(0.39  ,-1.06) This means that for a (x,y,z) point of the plans
+          You need to add (-2.4609, 0, -0.4924) to get the same point in the 3D
+          model [ (2.8509, 0.71, -0.5676) + (-2.4609, 0, -0.4924) = (0.39 , 71, -1.06) ]
+
+-->
+
+<!-- 750 lb for the standard and empty aircraft -->
 <airplane mass="750" >
 
-  <!-- aproach 65-70 kts -->
-  <approach speed="65" aoa="5" fuel="0.2" >
+  <!-- aproach @ 65-70 kts -->
+  <approach speed="65" aoa="8" fuel="0.2" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.65"/>  <!-- Ground adjustment only -->
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.00"/>  <!-- Ground adjustment only -->
   </approach>
   
   <cruise speed="161" alt="8000" fuel="0.5" >
@@ -21,102 +39,85 @@
   </cruise>
  
   <!-- Dimensions are expresed in metres 1 inch = 0.0258 m 
-       Dimensions are as per plans (e.g. nose at F.S. -4.8 inches = 0.1238 m ) 
+       Dimensions are as per plans (e.g. nose at F.S. -4.8 inches = 0.1238 m and as per Note above) 
   -->
-  <cockpit x="1.1166" y="0" z="0.5998" />
 
-  <fuselage ax="3.1238" ay="0" az="0.1961" bx="-1.0248" by="0" bz="0.2528" width="0.77" taper="0.50" midpoint="0.50" />
+  <cockpit x="0.64" y="0" z="0.38" />
+
+  <fuselage ax="2.55"  ay="0" az="-0.3039" 
+            bx="-1.94" by="0" bz="-0.74" 
+            width="0.77" taper="0.50" 
+            midpoint="0.30" />
 
   <!-- Wing based on Eppler 1230 -->
-  <wing x="0.225" y="0.5934" z="0.4489"  
-        chord="1.1016" 
-        taper="0.468" 
+  <wing x="-0.64" y="0.5934" z="-0.04"  
+        chord="1.6881" 
+        taper="0.3271" 
         length="3.4572"
         dihedral="0" 
         incidence="0" 
+        twist="-2.7"
         sweep="18.42"
         camber="0.22">
         <stall aoa="16" width="3" peak="1.5"/>
-        <flap1 start="0.061" end="0.617" lift="1.5" drag="1.2"/>
+        <flap1 start="0.33" end="0.76" lift="1.5" drag="1.1"/>
         <control-input control="FLAP1" split="true" axis="/controls/flight/aileron"/>
         <control-input control="FLAP1" split="true" axis="/controls/flight/aileron-trim"/>        
+
         <control-output control="FLAP1" prop="/surface-positions/left-aileron-pos-norm" side="left"/>
         <control-output control="FLAP1" prop="/surface-positions/right-aileron-pos-norm" side="right"/> 
   </wing>
  
-  <!-- Canard based on GU25-5(11)8 -->
-  <hstab x="2.5175" y="0.440" z="0.4876"
-         chord="0.37" 
+  <!-- Canard based on GU25-5(11)8 
+       This is not the high performance canard RONCZ
+  -->
+  <hstab x="1.78" y="0.30" z="-0.0124"
+         chord="0.40" 
          taper="1.0" 
-         length="1.57"
+         length="1.71"
          dihedral="0" 
-         incidence="2" 
+         incidence="0.03" 
          sweep="0"
          camber="0.071">
          <stall aoa="16" width="3" peak="2.0" />
-         <flap0 start="0.055" end="0.946" lift="1.6" drag="1.2"/>       
+         <flap0 start="0.05" end="0.946" lift="1.5" drag="1.1"/>       
+
          <control-input control="FLAP0" axis="/controls/flight/elevator" invert="true"/>
          <control-input control="FLAP0" axis="/controls/flight/elevator-trim" invert="true"/>      
-         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm" min="-0.6" max="1"/>
   </hstab>
 
-  <!-- Left vertical stabiliser -->
-  <vstab x="-1.54" y="4.05" z="0.4489" 
-          sweep="20" 
-          chord="0.674" 
-          taper="0.40" 
-          length="1.41">
-          <stall aoa="14" width="3" peak="1.5" />
-          <flap0  start="0" end="1"  lift="1.6" drag="1.2"/>
-          <control-input control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
-          <control-input control="FLAP0" axis="/controls/flight/rudder-trim" invert="true"/>
-          <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0" side="left" min="1" max="-1"/>
+  <!-- Right winglet -->
+  <vstab x="-4.54" y="-3.78" z="-0.25" 
+         sweep="15" 
+         chord="0.674" 
+         taper="0.30" 
+         length="1.41">
+         <stall aoa="27" width="10" peak="1.5" />
+         <flap0  start="0.3" end="0.9"  lift="1.2" drag="1.3"/>
+         <control-input control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
+         <control-input control="FLAP0" axis="/controls/flight/rudder-trim" invert="true"/>*
+
+         <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0"/>
   </vstab>
 
-  <!-- Right vertical stabiliser -->
-  <vstab x="-1.54" y="-4.05" z="0.4489" 
-         sweep="20" 
+
+  <!-- Left winglet -->
+  <vstab x="-4.54" y="3.78" z="-0.25" 
+         sweep="15" 
          chord="0.674" 
-         taper="0.40" 
+         taper="0.30" 
          length="1.41">
-         <stall aoa="14" width="3" peak="1.5" />
-         <flap0  start="0" end="1"  lift="1.6" drag="1.2"/>
+         <stall aoa="27" width="10" peak="1.5" />
+         <flap0  start="0.3" end="0.9"  lift="1.2" drag="1.3"/>
          <control-input control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
          <control-input control="FLAP0" axis="/controls/flight/rudder-trim" invert="true"/>
-         <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0" side="right" min="1" max="-1"/>
-  </vstab>
-
-  <!-- Ventral speed brake 
-       I still have no much idea what I am doing here. It is mostly a plain copy of the speed brake from
-       the F14
-  -->
-  <vstab x="1.71" y="0.0" z="-0.029"
-         length="0.65"
-         chord="0.35"
-         taper="1.0"
-         sweep="0"
-         dihedral="0"
-         camber="0.00"
-         incidence="0.0"
-         idrag="1.4">
-         <stall aoa="25" width="1.0" peak="1.2"/>
-         <!-- speed brakes -->
-         <flap0 start="0.1" end="0.9" lift="1.01" drag="5.0"/>
-         <flap1 start="0.1" end="0.9" lift="1.01" drag="5.0"/>
-         <!-- Drag correction -->
-         <spoiler start="0.1" end="0.9" lift="1.0" drag="25.0"/>
-         <control-input axis="/controls/flight/speedbrake" control="FLAP0"/>
-         <control-input axis="/controls/flight/speedbrake" src0="-1" src1="1" dst0="1" dst1="-1" control="FLAP1"/>
-         <!--
-         <control-input axis="/f-14/drag" control="SPOILER"/>
-         -->
-         <control-output control="FLAP0" prop="/surface-positions/speedbrake-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="2.0"/>
-         <control-speed control="FLAP1" transition-time="2.0"/>
+         <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0"/>
   </vstab>
 
   <!-- Wood propeller -->
-  <propeller x="-1.0764" y="0" z="0.4489"
+  <propeller x="-1.61" y="0" z="0.01"
              radius="0.73"
              mass="13" 
              moment="5"
@@ -135,44 +136,52 @@
                             eng-power="115"
                             displacement="235" 
                             compression="6.6"/>
-             <actionpt x="-1.0764" y="0.0" z="0.4489"/>
+             <actionpt x="-1.61" y="0.0" z="0.01"/>
              <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
              <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
              <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
              <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
   </propeller>
 
-  <!-- Noze wheel x="0.4386" y="0.0" z="-0.6966" -->
-  <gear x="1.993" y="0" z="-1.199"
-       compression="0.15"
-       retract-time="5">
-       <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-0.5" dst1="0.5"/>
-       <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-       <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
-       <control-speed control="EXTEND" transition-time="7"/>
+  <!-- Noze wheel -->
+  <gear x="1.993" y="0.0" z="-1.1999" 
+        compression="0.15"
+        retract-time="5">
+        <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-0.5" dst1="0.5"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+        <control-speed control="EXTEND" transition-time="7"/>
   </gear>
 
-  <!-- Left wheel x="-2.8509" y="0.7998" z="-0.6966" -->
-  <gear x="-0.385" y="0.706" z="-1.193"
+  <!-- Left wheel -->
+  <gear x="-0.39" y="0.71" z="-1.1999" 
         compression="0.1">
-        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
-        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   </gear>
 
-  <!-- Right wheel x="-2.8509" y="-0.7998" z="-0.6966" -->
-  <gear x="-0.385" y="-0.706" z="-1.193"
+  <!-- Right wheel -->
+  <gear x="-0.39" y="-0.71" z="-1.1999" 
         compression="0.1">
-        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
-        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   </gear>
 
-  <!-- Left and right fuel taks. 26 US Gallon or 98.42 l -->
-  <tank x="0.31" y="0.5934" z="0.4386" capacity="155"/>
-  <tank x="0.31" y="-0.5934" z="0.4386" capacity="155"/>
+  <!-- Left and right fuel tanks. 26 US Gallon (98.42 litres each) @ 0.72 kg/l 
+       Fuel @ F.S. 104.5
+   -->
+
+  <tank x="-0.39" y="0.5934" z="-0.04" capacity="155"/>
+  <tank x="-0.39" y="-0.5934" z="-0.04" capacity="155"/>
 
   <!-- C.G should be between FS 97 (FW limit) and FS 104 (Aft limit) 
-  This is x=-2.50 and x=-2.68
+    This is x=-0.04 and x=-0.22 (By 3D model coordinate system)
   -->
-  <ballast x="4.0" y="0.000" z="0.4489" mass="115"/>
+  <!-- The pilot Wt @ F.S. 59 -->
+  <ballast x="0.93" y="0.000" z="-0.2511" mass="150"/>
+  <!-- The passengger Wt @ F.S. 103  -->
+  <ballast x="-0.1974" y="0.000" z="-0.2511" mass="150"/>
+  <!-- Oil @ F.S. 140 -->
+  <ballast x="-1.1511" y="0.000" z="-0.2511" mass="8"/>
 
 </airplane>
