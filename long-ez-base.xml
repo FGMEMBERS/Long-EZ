@@ -37,6 +37,17 @@
       </generic>
     </multiplay>
 
+    <systems>
+      <autopilot>
+        <path>Aircraft/Long-EZ/Nasal/KAP140.xml</path>
+      </autopilot>
+      <electrical>
+        <!-- null electrical system path here so we can use a nasal based -->
+        <!-- model defined later in the nasal section of this file. -->
+        <path></path>
+      </electrical>
+    </systems>
+
     <help>
       <title>Rutan Long EZ</title>
       <key>
@@ -66,9 +77,21 @@
     <longez>
       <file>Aircraft/Long-EZ/Nasal/doors.nas</file>
       <file>Aircraft/Long-EZ/Nasal/light.nas</file>
-<!--  <file>Aircraft/Long-EZ/Nasal/long-ez.nas</file> -->
       <file>Aircraft/Long-EZ/Nasal/liveries.nas</file>
-   </longez>
+    </longez>
+    <kap140>
+      <file>Aircraft/Generic/kap140.nas</file>
+      <!-- We can set some variables that might be
+           aircraft specific. We must do it after the file
+           to override the ones that are in the .nas file.
+      -->
+      <script><![CDATA[
+                    headingNeedleDeflection = "/instrumentation/nav/heading-needle-deflection";
+                    gsNeedleDeflection = "/instrumentation/nav/gs-needle-deflection";
+                    staticPressure = "systems/static/pressure-inhg";
+      ]]>
+      </script>
+    </kap140>
   </nasal>
   
 </PropertyList>

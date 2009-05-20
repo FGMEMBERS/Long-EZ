@@ -76,5 +76,32 @@
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/full-vis.xml</path>
   </model>
 
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kx165/kx165.xml</path>
+    <offsets>
+      <x-m> 0.004 </x-m>
+      <y-m> 0.130 </y-m>
+      <z-m> 0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/kap140/KAP140TwoAxisAlt.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.130 </y-m>
+      <z-m> 0.150 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.198 </y-m>
+      <z-m>  0.114 </z-m>
+    </offsets>
+  </model>
+
 </PropertyList>
 
