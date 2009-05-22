@@ -1,4 +1,4 @@
-English/Fran√ßais
+English/FranÁais
 
 [English]
 ----------
@@ -6,8 +6,8 @@ English/Fran√ßais
 A little history
 ================
 
-Skyranger
-=========
+Rutan Long EZ
+=============
 
 Manufacturer                  : 
 Type                          : 
@@ -27,6 +27,8 @@ Some useful keys:
 Thanks
 ======
 
+Victhor FOSTER for the addtion of instruments
+
 ===============
 BARANGER Emmanuel
 November, 05, 2007. 
@@ -35,25 +37,24 @@ http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[Fran√ßais]
+[FranÁais]
 ----------
 
 Un peu d'histoire
 =================
 
-Skyranger
-=========
+Rutan Long EZ
+=============
 
 Constructeur                  : 
 Type                          : 
-Ann√©e                         : 
+AnnÈe                         : 
 Moteur                        : 
 Envergure                     : 
 Longueur                      : 
 Hauteur                       : 
-Poids max au d√©collage        : 
-Vitesse estim√©e de croisi√®re  : 
-Autonomie estim√©e             : 
+Poids ‡ vide                  : 
+Vitesse de croisËre           : 
 Equipage                      : 
 
 
@@ -62,6 +63,8 @@ Quelques touches utiles :
 
 Remerciements
 =============
+
+Victhor FOSTER pour les instruments ajoutÈs
 
 ===============
 BARANGER Emmanuel

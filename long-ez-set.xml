@@ -4,8 +4,8 @@
 <PropertyList include="long-ez-yasim-cnf.xml">
 
   <sim>
-    <description>Rutan Long EZ</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <description>Rutan Long EZ (Yasim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), Victhor FOSTER (panel)</author>
   </sim>
 
 </PropertyList>
