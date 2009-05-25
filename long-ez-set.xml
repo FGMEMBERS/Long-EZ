@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- <PropertyList include="long-ez-jsbsim-cnf.xml"> -->
+<!--<PropertyList include="long-ez-jsbsim-cnf.xml">-->
 <PropertyList include="long-ez-yasim-cnf.xml">
 
   <sim>
-    <description>Rutan Long EZ (Yasim)</description>
-    <author>Emmanuel BARANGER (3D/FDM), Victhor FOSTER (panel)</author>
+    <description>Rutan Long EZ</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
   </sim>
 
 </PropertyList>

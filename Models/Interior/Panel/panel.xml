@@ -51,6 +51,24 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.005 </y-m>
+      <z-m>  0.283 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m>  0.026 </x-m>
+      <y-m> -0.070 </y-m>
+      <z-m>  0.273 </z-m>
+    </offsets>
+  </model>
+
   <!-- RPM -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
@@ -63,7 +81,7 @@
 
   <!-- HDG -->
   <model>
-    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/hi/hi.xml</path>
     <offsets>
       <x-m>  0.014 </x-m>
       <y-m> -0.108 </y-m>
@@ -76,53 +94,39 @@
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/full-vis.xml</path>
   </model>
 
-  <!-- KX165 -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kx165/kx165.xml</path>
     <offsets>
       <x-m> 0.004 </x-m>
-      <y-m> 0.130 </y-m>
+      <y-m> 0.180 </y-m>
       <z-m> 0.100 </z-m>
     </offsets>
   </model>
 
-  <!-- KAP140 -->
   <model>
-    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kap140/KAP140TwoAxisAlt.xml</path>
+	  <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kfc150/kfc150.xml</path>
     <offsets>
       <x-m> 0.014 </x-m>
-      <y-m> 0.130 </y-m>
+      <y-m> 0.180 </y-m>
       <z-m> 0.150 </z-m>
     </offsets>
-  </model>    
+  </model>
 
-  <!-- VSI -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kns80/kns80.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.015 </y-m>
+      <z-m> 0.110 </z-m>
+    </offsets>
+  </model>
+
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m>  0.014 </x-m>
       <y-m> -0.198 </y-m>
       <z-m>  0.114 </z-m>
-    </offsets>
-  </model>
-
-  <!-- HI -->
-  <model>
-    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/hi/hi.xml</path>
-    <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m> -0.018 </y-m>
-      <z-m>  0.114 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Fuel tank -->
-  <model>
-    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
-    <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m> -0.063 </y-m>
-      <z-m>  0.276 </z-m>
     </offsets>
   </model>
 

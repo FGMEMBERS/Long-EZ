@@ -27,11 +27,12 @@ Some useful keys:
 Thanks
 ======
 
-Victhor FOSTER for the addtion of instruments
+Victhor FOSTER and VIPER for the addtion of instruments
 
 ===============
 BARANGER Emmanuel
-November, 05, 2007. 
+November, 05, 2007.
+May, 25, 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
@@ -64,11 +65,12 @@ Quelques touches utiles :
 Remerciements
 =============
 
-Victhor FOSTER pour les instruments ajoutés
+Victhor FOSTER et VIPER pour les instruments ajoutés
 
 ===============
 BARANGER Emmanuel
 05 Novembre 2007.
+25 Mai 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr

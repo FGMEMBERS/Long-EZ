@@ -39,7 +39,7 @@
 
     <systems>
       <autopilot>
-        <path>Aircraft/Long-EZ/Nasal/KAP140.xml</path>
+        <path>Aircraft/Long-EZ/Nasal/autopilot.xml</path>
       </autopilot>
       <electrical>
         <!-- null electrical system path here so we can use a nasal based -->
@@ -78,20 +78,12 @@
       <file>Aircraft/Long-EZ/Nasal/doors.nas</file>
       <file>Aircraft/Long-EZ/Nasal/light.nas</file>
       <file>Aircraft/Long-EZ/Nasal/liveries.nas</file>
+      <file>Aircraft/Long-EZ/Nasal/KNS80.nas</file>
+      <file>Aircraft/Long-EZ/Nasal/Electrical.nas</file>
     </longez>
-    <kap140>
-      <file>Aircraft/Generic/kap140.nas</file>
-      <!-- We can set some variables that might be
-           aircraft specific. We must do it after the file
-           to override the ones that are in the .nas file.
-      -->
-      <script><![CDATA[
-                    headingNeedleDeflection = "/instrumentation/nav/heading-needle-deflection";
-                    gsNeedleDeflection = "/instrumentation/nav/gs-needle-deflection";
-                    staticPressure = "systems/static/pressure-inhg";
-      ]]>
-      </script>
-    </kap140>
+    <king>
+      <file>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kfc150/kfc150.nas</file>
+    </king>
   </nasal>
   
 </PropertyList>
