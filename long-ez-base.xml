@@ -16,6 +16,7 @@
 
     <sound>
       <path archive="y">Aircraft/Long-EZ/Sounds/long-ez-sound.xml</path>
+      <click type="bool">0</click>
     </sound>
 
     <model>
@@ -76,14 +77,19 @@
   <nasal>
     <longez>
       <file>Aircraft/Long-EZ/Nasal/doors.nas</file>
+      <file>Aircraft/Long-EZ/Nasal/electrical.nas</file>
       <file>Aircraft/Long-EZ/Nasal/light.nas</file>
+      <!--<file>Aircraft/Long-EZ/Nasal/action.nas</file>-->
+      <!--<file>Aircraft/Long-EZ/Nasal/fluids.nas</file>-->
       <file>Aircraft/Long-EZ/Nasal/liveries.nas</file>
-      <file>Aircraft/Long-EZ/Nasal/KNS80.nas</file>
-      <file>Aircraft/Long-EZ/Nasal/Electrical.nas</file>
+      <file>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kns80/kns80.nas</file>
     </longez>
     <king>
       <file>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kfc150/kfc150.nas</file>
     </king>
+    <m877>
+      <file>Aircraft/Instruments-3d/clock/M877/M877.nas</file>
+    </m877>
   </nasal>
   
 </PropertyList>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>amberlight.ac</path>
+
+  <animation> 
+    <type>select</type>
+    <object-name>light</object-name>
+    <condition>
+        <and>
+            <less-than>
+                <property>gear/gear[0]/position-norm</property>
+                <value>1</value>
+            </less-than>
+            <greater-than>
+                <property>gear/gear[0]/position-norm</property>
+                <value>0</value>
+            </greater-than>
+        </and>
+    </condition>
+  </animation> 
+
+</PropertyList>

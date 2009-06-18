@@ -59,6 +59,33 @@
       <z-m>  0.283 </z-m>
     </offsets>
   </model>
+  
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/Lights/nosegearup-lamp.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.125 </y-m>
+      <z-m>  0.258 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/Lights/nosegear-lamp.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.110 </y-m>
+      <z-m>  0.258 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/Lights/gearunlocked-lamp.xml</path>
+    <offsets>
+      <x-m>  0.026 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.275 </z-m>
+    </offsets>
+  </model>
 
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
@@ -97,14 +124,14 @@
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kx165/kx165.xml</path>
     <offsets>
-      <x-m> 0.004 </x-m>
+      <x-m> 0.014 </x-m>
       <y-m> 0.180 </y-m>
       <z-m> 0.100 </z-m>
     </offsets>
   </model>
 
   <model>
-	  <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kfc150/kfc150.xml</path>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kfc150/kfc150.xml</path>
     <offsets>
       <x-m> 0.014 </x-m>
       <y-m> 0.180 </y-m>
@@ -127,6 +154,141 @@
       <x-m>  0.014 </x-m>
       <y-m> -0.198 </y-m>
       <z-m>  0.114 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/fuelfaucet/fuel.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.250 </y-m>
+      <z-m>  0.165 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/breakers/master.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m>  0.095 </y-m>
+      <z-m> 0.195 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/breakers/instruments.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.110 </y-m>
+      <z-m> 0.195 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/breakers/load.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.195 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/breakers/pump.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.195 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/breakers/starter.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.155 </y-m>
+      <z-m> 0.195 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Instruments-3d/clock/M877/m877.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.050 </y-m>
+      <z-m> 0.180 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/master.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.095 </y-m>
+      <z-m> 0.175 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/generator.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.110 </y-m>
+      <z-m> 0.175 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/magnetos.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.195 </y-m>
+      <z-m> 0.185 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/instruments.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.175 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/starter.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.235 </y-m>
+      <z-m> 0.185 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/pump.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.175 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/lights.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.155 </y-m>
+      <z-m> 0.175 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/radio.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.170 </y-m>
+      <z-m> 0.175 </z-m>
     </offsets>
   </model>
 

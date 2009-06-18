@@ -46,7 +46,7 @@
   <property>consumables/fuel/tank[0]/level-gal_us</property>
   <interpolation>
    <entry><ind>0.0</ind><dep>-5.0</dep></entry>
-   <entry><ind>40</ind><dep>90.0</dep></entry>
+   <entry><ind>23</ind><dep>90.0</dep></entry>
   </interpolation>
   <axis> 
    <x>1</x>
@@ -67,7 +67,7 @@
   <property>consumables/fuel/tank[1]/level-gal_us</property>
   <interpolation>
    <entry><ind>0.0</ind><dep>-5.0</dep></entry>
-   <entry><ind>40.0</ind><dep>90.0</dep></entry>
+   <entry><ind>23.0</ind><dep>90.0</dep></entry>
   </interpolation>
   <axis> 
    <x>-1</x>

@@ -62,8 +62,8 @@
         incidence="0" 
         twist="-2.7"
         sweep="18.42"
-        camber="0.22">
-        <stall aoa="16" width="3" peak="1.5"/>
+        camber="0.12">
+        <stall aoa="20" width="3" peak="1.5"/>
         <flap1 start="0.33" end="0.76" lift="1.5" drag="1.1"/>
 
         <control-input control="FLAP1" split="true" axis="/controls/flight/aileron"/>
@@ -84,7 +84,7 @@
          incidence="0.03" 
          sweep="0"
          camber="0.071">
-         <stall aoa="16" width="3" peak="2.0" />
+         <stall aoa="18" width="3" peak="2.0" />
          <flap0 start="0.05" end="0.946" lift="1.5" drag="1.1"/>       
 
          <control-input control="FLAP0" axis="/controls/flight/elevator" invert="true"/>
@@ -125,21 +125,21 @@
 
   <!-- Wood propeller -->
   <propeller x="-1.61" y="0" z="0.01"
-             radius="0.73"
-             mass="13" 
-             moment="5"
-             cruise-speed="137" 
+             radius="0.875"
+             mass="34" 
+             moment="3.74"
+             cruise-speed="161" 
              cruise-rpm="2550"
              cruise-alt="12000" 
              cruise-power="57.5"
              takeoff-power="115" 
-             takeoff-rpm="2840"
+             takeoff-rpm="2900"
              gear-ratio="1.0" >
              <!-- Engine Lycoming O-235-L2C 115 BHP 
                   Don't know how to provide several type like
                   Automotive conversion and Continental, etc
              -->
-             <piston-engine  eng-rpm="2840"  
+             <piston-engine  eng-rpm="2700"  
                              eng-power="115"
                              displacement="235" 
                              compression="6.6"/>
@@ -152,6 +152,9 @@
   </propeller>
 
   <!-- Noze wheel -->
+  <gear x="2.282" y="0" z="-0.425"
+	compression="1.2">
+  </gear>
   <gear x="1.993" y="0.0" z="-1.1999" 
         compression="0.15"
         retract-time="5">
@@ -164,14 +167,14 @@
   </gear>
 
   <!-- Left wheel -->
-  <gear x="-0.39" y="0.71" z="-1.1999" 
+  <gear x="-0.39" y="0.91" z="-1.1999" 
         compression="0.1">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   </gear>
 
   <!-- Right wheel -->
-  <gear x="-0.39" y="-0.71" z="-1.1999" 
+  <gear x="-0.39" y="-0.91" z="-1.1999" 
         compression="0.1">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
@@ -187,6 +190,7 @@
   <!-- C.G should be between FS 97 (FW limit) and FS 104 (Aft limit) 
     This is x=-0.04 and x=-0.22 (By 3D model coordinate system)
   -->
+  <ballast x="1.5" y="0.000" z="-0.2511" mass="20"/>
   <!-- The pilot Wt @ F.S. 59 -->
   <ballast x="0.93" y="0.000" z="-0.2511" mass="160"/>
   <!-- The passengger Wt @ F.S. 103  -->

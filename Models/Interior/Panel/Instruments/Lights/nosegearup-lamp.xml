@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>redlight.ac</path>
+
+  <animation>
+    <type>select</type>
+    <object-name>light</object-name>
+    <condition>
+        <equals>
+            <property>gear/gear/position-norm</property>
+            <value>0</value>
+        </equals>
+    </condition>
+  </animation>
+ 
+</PropertyList>
