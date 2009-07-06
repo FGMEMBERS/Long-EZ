@@ -27,7 +27,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>controls/switches/fuel-pump</property>
+        <property>controls/flight/speedbrake</property>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -39,11 +39,11 @@
   <animation>
     <type>rotate</type>
     <object-name>Switch</object-name>
-    <property>/controls/switches/fuel-pump</property>
+    <property>/controls/flight/speedbrake</property>
     <factor>22.5</factor>
     <axis>
       <x>  0 </x>
-      <y> -1 </y>
+      <y>  1 </y>
       <z>  0 </z>
     </axis>
     <center>

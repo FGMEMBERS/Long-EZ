@@ -1,4 +1,4 @@
-English/FranÁais
+English/Fran√ßais
 
 [English]
 ----------
@@ -9,17 +9,17 @@ A little history
 Rutan Long EZ
 =============
 
-Manufacturer                  : 
-Type                          : 
+Manufacturer                  : Homebuilt Experimental
+Type                          : Canard Pusher
 Year                          : 
-Powerplant                    : 
-Wingspan                      : 
-Length                        : 
-Height                        : 
+Powerplant                    : Lycoming O-235
+Wingspan                      : 26.1 Ft.
+Length                        : 201.4 In.
+Height                        : 94.5 In.
 weight max                    : 
-Cruise speed                  : 
-Range                         : 
-Crew                          :  
+Cruise speed                  : 160 Kts
+Range                         : 1200 Mi
+Crew                          :  2
 
 Some useful keys:
 =================
@@ -27,7 +27,7 @@ Some useful keys:
 Thanks
 ======
 
-Victhor FOSTER and VIPER for the addtion of instruments
+Victhor FOSTER and VIPER for the addtion of instruments and electric system
 
 ===============
 BARANGER Emmanuel
@@ -38,7 +38,7 @@ http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[FranÁais]
+[Fran√ßais]
 ----------
 
 Un peu d'histoire
@@ -49,13 +49,13 @@ Rutan Long EZ
 
 Constructeur                  : 
 Type                          : 
-AnnÈe                         : 
+Ann√©e                         : 
 Moteur                        : 
 Envergure                     : 
 Longueur                      : 
 Hauteur                       : 
-Poids ‡ vide                  : 
-Vitesse de croisËre           : 
+Poids √† vide                  : 
+Vitesse de croisi√®re          : 
 Equipage                      : 
 
 
@@ -65,7 +65,7 @@ Quelques touches utiles :
 Remerciements
 =============
 
-Victhor FOSTER et VIPER pour les instruments ajoutÈs
+Victhor FOSTER et VIPER pour les instruments ajout√©s et le syst√®me √©lectrique
 
 ===============
 BARANGER Emmanuel

@@ -29,8 +29,8 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/circuit-breakers/avionic-bus-1</property>
-        <value type="bool">true</value>
+	<property>consumables/fuel/tank-selector</property>
+        <!--<value type="bool">true</value>-->
       </binding>
     </action>
   </animation>
@@ -38,7 +38,7 @@
   <animation>
     <type>rotate</type>
     <object-name>fuelcock</object-name>
-    <property>controls/circuit-breakers/avionic-bus-1</property>
+    <property>consumables/fuel/tank-selector</property>
     <factor>90</factor>
     <axis>
       <x> -1 </x>

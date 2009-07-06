@@ -37,6 +37,8 @@
         <int type="int">0</int>
       </generic>
     </multiplay>
+    
+
 
     <systems>
       <autopilot>
@@ -55,12 +57,57 @@
         <name>d</name>
         <desc>Open/Close canopy</desc>
       </key>
+      <key>
+	      <name>Ctrl-b</name>
+	      <desc>SpeedBrake</desc>
+      </key>
       <line>______________________________________________</line>
+      <line></line>
+      <line>Switches</line>
+      <line>(1)  (2)  (3)  (4)  (5)</line>
+      <line></line>
+      <line>1: Master</line>
+      <line>2: Generator</line>
+      <line>3: Instruments</line>
+      <line>4: Spare</line>
+      <line>5: Lights</line>
+      <line></line>
+      <line>Engine Start                             Climb/Cruise</line>
+      <line>____________                             ____________</line>
+      <line>Mixture - RICH                           Gear - UP</line>
+      <line>Throttle - Primed and Cracked            Mixture - Lean as Required</line>
+      <line>Master Switch - ON                       Fuel Selector - Balance Management</line>
+      <line>Magneto - Left Only (Start)</line>
+      <line>Start Engine</line>
+      <line>Throttle - IDLE                          Descent/Landing</line>
+      <line>Magneto - Both ON                        _______________</line>
+      <line>                                         Breakers - IN</line>
+      <line>                                         Fuel Selector - Fullest Tank</line>
+      <line>Before Takeoff                           Mixture - Rich</line>
+      <line>______________                           Gear - Down below 110 kts</line>
+      <line>Fuel Selector - Fullest Tank             SpeedBrake - Deployed as Required</line>
+      <line>SpeedBrake - UP</line>
+      <line>Breakers - IN</line>
+      <line>Generator - ON                           ShutDown</line>
+      <line>Lights - As Required                     ________</line>
+      <line>                                         SpeedBrake - UP</line>
+      <line>                                         Lights - OFF as Required</line>
+      <line>                                         Instruments - OFF</line>
+      <line>                                         Mixture - Idle Cutoff</line>
+      <line>                                         Magneto - Both OFF</line>
+      <line>                                         Generator - OFF</line>
+      <line>                                         Master Switch - OFF</line>
     </help>
 
     <menubar include="Dialogs/long-ez-menu.xml"/>
 
   </sim>
+  
+  <consumables>
+	  <fuel>
+		  <tank-selector type="bool">0</tank-selector>
+	  </fuel>
+    </consumables>
 
   <controls>
     <engines>
@@ -76,6 +123,7 @@
  
   <nasal>
     <longez>
+      <file>Aircraft/Long-EZ/Nasal/long-ez.nas</file>
       <file>Aircraft/Long-EZ/Nasal/doors.nas</file>
       <file>Aircraft/Long-EZ/Nasal/electrical.nas</file>
       <file>Aircraft/Long-EZ/Nasal/light.nas</file>
@@ -88,8 +136,8 @@
       <file>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/kfc150/kfc150.nas</file>
     </king>
     <m877>
-      <file>Aircraft/Instruments-3d/clock/M877/M877.nas</file>
+      <file>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/M877/M877.nas</file>
     </m877>
   </nasal>
-  
+
 </PropertyList>

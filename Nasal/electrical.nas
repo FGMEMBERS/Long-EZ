@@ -20,7 +20,7 @@ props.globals.getNode("controls/circuit-breakers/master", 1).setBoolValue(1);
 props.globals.getNode("controls/circuit-breakers/instruments", 1).setBoolValue(1);
 props.globals.getNode("controls/circuit-breakers/avionic-bus", 1).setBoolValue(1);
 props.globals.getNode("controls/circuit-breakers/fuel-pump", 1).setBoolValue(1);
-props.globals.getNode("controls/circuit-breakers/starter", 1).setBoolValue(1);
+props.globals.getNode("controls/circuit-breakers/starter", 0).setBoolValue(1);
 props.globals.getNode("controls/electric/battery-switch", 1).setBoolValue(0);
 props.globals.getNode("controls/electric/engine/generator", 1).setBoolValue(0);
 #props.globals.getNode("controls/electric/avionics-switch", 1).setBoolValue(0);
