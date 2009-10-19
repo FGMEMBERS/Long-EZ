@@ -10,7 +10,7 @@
 	      (0,0,0) in 3D is (0,0,0) in FDM but with the following mapping of 
 		  axes from 3D model to FDM (YASim) 3D X axe is the FDM -X, 3D Y axe 
 		  is FDM -Y and the Z axe is the same.
-	      
+
 	      The Long-EZ plans uses a distinct origing for coordinates and the 
 		  imperial system instead of the metric system. The good news is that 
 		  the Z (W.L.) and Y (B.L.) axes are the same and the X (F.S.) axe of 

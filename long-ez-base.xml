@@ -37,8 +37,6 @@
         <int type="int">0</int>
       </generic>
     </multiplay>
-    
-
 
     <systems>
       <autopilot>
@@ -58,8 +56,8 @@
         <desc>Open/Close canopy</desc>
       </key>
       <key>
-	      <name>Ctrl-b</name>
-	      <desc>SpeedBrake</desc>
+        <name>Ctrl-b</name>
+        <desc>SpeedBrake</desc>
       </key>
       <line>______________________________________________</line>
       <line></line>
@@ -102,12 +100,12 @@
     <menubar include="Dialogs/long-ez-menu.xml"/>
 
   </sim>
-  
+
   <consumables>
-	  <fuel>
-		  <tank-selector type="bool">0</tank-selector>
-	  </fuel>
-    </consumables>
+    <fuel>
+      <tank-selector type="bool">0</tank-selector>
+    </fuel>
+  </consumables>
 
   <controls>
     <engines>
@@ -120,7 +118,7 @@
   <input>
     <keyboard include="Nasal/long-ez-keyboard.xml"/>
   </input>
- 
+
   <nasal>
     <longez>
       <file>Aircraft/Long-EZ/Nasal/long-ez.nas</file>

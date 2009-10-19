@@ -480,7 +480,7 @@
 
   <!-- Ajout des effets lumineux -->
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/beacon.xml</path>
+    <path>Aircraft/Long-EZ/Models/lights/beacon.xml</path>
     <offsets>
       <x-m> 0.742 </x-m>
       <y-m> 0.000 </y-m>
@@ -489,7 +489,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/RedLight.xml</path>
+    <path>Aircraft/Long-EZ/Models/lights/RedLight.xml</path>
     <offsets>
       <x-m>  1.568 </x-m>
       <y-m> -3.802 </y-m>
@@ -498,7 +498,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/GreenLight.xml</path>
+    <path>Aircraft/Long-EZ/Models/lights/GreenLight.xml</path>
     <offsets>
       <x-m>  1.568 </x-m>
       <y-m>  3.802 </y-m>
@@ -507,7 +507,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/WhiteLight.xml</path>
+    <path>Aircraft/Long-EZ/Models/lights/WhiteLight.xml</path>
     <offsets>
       <x-m>  0.578 </x-m>
       <y-m> -1.443 </y-m>
@@ -516,7 +516,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/WhiteLight.xml</path>
+    <path>Aircraft/Long-EZ/Models/lights/WhiteLight.xml</path>
     <offsets>
       <x-m>  0.578 </x-m>
       <y-m>  1.443 </y-m>
@@ -525,7 +525,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/StrobeWhite.xml</path>
+    <path>Aircraft/Long-EZ/Models/lights/StrobeWhite.xml</path>
     <offsets>
       <x-m>  1.588 </x-m>
       <y-m> -3.802 </y-m>
@@ -534,7 +534,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/StrobeWhite.xml</path>
+    <path>Aircraft/Long-EZ/Models/lights/StrobeWhite.xml</path>
     <offsets>
       <x-m>  1.588 </x-m>
       <y-m>  3.802 </y-m>
