@@ -2,83 +2,75 @@
 
 <PropertyList>
 
- <path>FuelGauge.ac</path>
+  <path>FuelGauge.ac</path>
 
- <animation>
-	 <type>shader</type>
-	 <shader>chrome</shader>
-	 <texture>glass.png</texture>
-	 <object-name>vitre</object-name>
- </animation>
- 
- <animation>
-	 <type>material</type>
-	 <object-name>Face</object-name>
-	 <object-name>PtrL</object-name>
-	 <object-name>PtrR</object-name>
-	 <emission>
-		 <red>   1.0 </red>
-		 <green> 0.2 </green>
-		 <blue>  0.0 </blue>
-		 <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-		 <factor-prop>/sim/model//material/instruments/factor</factor-prop>
-	 </emission>
+  <animation>
+    <object-name>Face</object-name>
+    <object-name>PtrL</object-name>
+    <object-name>PtrR</object-name>
+
+    <object-name>vitre</object-name>
   </animation>
- <!--<animation>
-	 <type>material</type>
-	 <object-name>PtrL</object-name>
-	 <object-name>PtrR</object-name>
-	 <object-name>PtrTipL</object-name>
-	 <object-name>PtrTipR</object-name>
-	 <object-name>Face</object-name>
-	 <emission>
-		 <red>   0.030 </red>
-		 <green> 0.015 </green>
-		 <blue>  0.005 </blue>
-		 <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-	 </emission>
-  </animation>-->
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
  
- <animation> 
-  <type>rotate</type>
-  <object-name>PtrL</object-name>
-  <object-name>PtrTipL</object-name>
-  <property>consumables/fuel/tank[0]/level-gal_us</property>
-  <interpolation>
-   <entry><ind>0.0</ind><dep>-5.0</dep></entry>
-   <entry><ind>23</ind><dep>90.0</dep></entry>
-  </interpolation>
-  <axis> 
-   <x>1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-  <center>
-   <x-m>0</x-m>
-   <y-m>-0.02</y-m>
-   <z-m>0</z-m>  
-  </center>
- </animation>         
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>PtrL</object-name>
+    <object-name>PtrR</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.0 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+    </emission>
+  </animation>
  
- <animation> 
-  <type>rotate</type>
-  <object-name>PtrR</object-name>
-  <object-name>PtrTipR</object-name>
-  <property>consumables/fuel/tank[1]/level-gal_us</property>
-  <interpolation>
-   <entry><ind>0.0</ind><dep>-5.0</dep></entry>
-   <entry><ind>23.0</ind><dep>90.0</dep></entry>
-  </interpolation>
-  <axis> 
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-  <center>
-   <x-m>0</x-m>
-   <y-m>0.02</y-m>
-   <z-m>0</z-m>  
-  </center>
- </animation>         
+  <animation> 
+    <type>rotate</type>
+    <object-name>PtrL</object-name>
+    <property>consumables/fuel/tank[0]/level-gal_us</property>
+    <interpolation>
+      <entry><ind>  0 </ind><dep> -5 </dep></entry>
+      <entry><ind> 23 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.02 </y-m>
+      <z-m>  0.00 </z-m>  
+    </center>
+  </animation>         
+ 
+  <animation> 
+    <type>rotate</type>
+    <object-name>PtrR</object-name>
+    <property>consumables/fuel/tank[1]/level-gal_us</property>
+    <interpolation>
+      <entry><ind>  0 </ind><dep> -5 </dep></entry>
+      <entry><ind> 23 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.02 </y-m>
+      <z-m> 0.00 </z-m>  
+    </center>
+  </animation>         
  
 </PropertyList>

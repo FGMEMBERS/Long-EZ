@@ -6,24 +6,24 @@
 	Flight model information from TERF CD and Open-EZ diagrams
 	version 0.3
 
+        Emmanuel BARANGER 10-2010 : Updated with Melchior's script.
+
 	NOTE: The (x,y,z) coordinates of this FDM are based on the 3D model where 
 	      (0,0,0) in 3D is (0,0,0) in FDM but with the following mapping of 
-		  axes from 3D model to FDM (YASim) 3D X axe is the FDM -X, 3D Y axe 
-		  is FDM -Y and the Z axe is the same.
+              axes from 3D model to FDM (YASim) 3D X axe is the FDM -X, 3D Y axe 
+              is FDM -Y and the Z axe is the same.
 
 	      The Long-EZ plans uses a distinct origing for coordinates and the 
-		  imperial system instead of the metric system. The good news is that 
-		  the Z (W.L.) and Y (B.L.) axes are the same and the X (F.S.) axe of 
-		  the plans is as the 3D axe  ( X in plans (same as 3D) is -X in FDM )
+              imperial system instead of the metric system. The good news is that 
+              the Z (W.L.) and Y (B.L.) axes are the same and the X (F.S.) axe of 
+              the plans is as the 3D axe  ( X in plans (same as 3D) is -X in FDM )
 
-		  For instance the main left wheel centre is by plans at X or F.S. 110.5'
-		  and Z or WL -22 inch (x,z)=(110.5,-22) or in the metric system this is 
-		  (x,z)=(2.8509,-0.5676) m. In the 3D model the same wheel is at 
-		  (x,z)=(0.39  ,-1.06) This means that for a (x,y,z) point of the plans
-		  You need to add (-2.4609, 0, -0.4924) to get the same point in the 3D
-		  model [ (2.8509, 0.71, -0.5676) + (-2.4609, 0, -0.4924) = (0.39 , 71, -1.06) ]
-
-
+              For instance the main left wheel centre is by plans at X or F.S. 110.5'
+              and Z or WL -22 inch (x,z)=(110.5,-22) or in the metric system this is 
+              (x,z)=(2.8509,-0.5676) m. In the 3D model the same wheel is at 
+              (x,z)=(0.39  ,-1.06) This means that for a (x,y,z) point of the plans
+              You need to add (-2.4609, 0, -0.4924) to get the same point in the 3D
+              model [ (2.8509, 0.71, -0.5676) + (-2.4609, 0, -0.4924) = (0.39 , 71, -1.06) ]
 -->
 <!-- 750 lb for the standard and empty aircraft -->
 <airplane mass="750" >
@@ -44,25 +44,20 @@
   -->
   <cockpit x="0.64" y="0" z="0.38" />
 
-  <fuselage ax="2.55"  ay="0" az="-0.3039" 
-            bx="-1.94" by="0" bz="-0.74" 
-            width="0.77" taper="0.50" 
-            midpoint="0.30" />
+  <fuselage ax=" 2.550" ay="0" az="-0.303" bx="-1.575" by="0" bz="-0.040" width="0.77" taper="0.50" midpoint="0.50"/>
 
   <!-- Wing based on Eppler 1230 -->
   <!--
-  <wing x="-0.64" y="0.5934" z="-0.04"  
+  <wing x="-0.64" y="0.5934" z="-0.040"  
         chord="1.6881" 
   -->
-  <wing x="-0.64" y="0.2934" z="-0.04"  
-        chord="1.9881" 
-        taper="0.3271" 
-        length="3.4572"
-        dihedral="0" 
-        incidence="0" 
+  <wing x="-0.171" y="0.293" z="-0.040"  
+        chord="2.40" 
+        length="3.84"
+        taper="0.25"
         twist="-2.7"
-        sweep="18.42"
-        camber="0.12">
+        sweep="25"
+        camber="0.088">
         <stall aoa="20" width="3" peak="1.5"/>
         <flap1 start="0.33" end="0.76" lift="1.5" drag="1.1"/>
 	<spoiler start="0" end="1" lift="1.0" drag="9.0"/>
@@ -81,13 +76,13 @@
   <hstab x="1.78" y="0.30" z="-0.0124"
          chord="0.40" 
          taper="1.0" 
-         length="1.71"
+         length="1.44"
          dihedral="0" 
          incidence="0.03" 
          sweep="0"
          camber="0.071">
          <stall aoa="18" width="3" peak="2.0" />
-         <flap0 start="0.05" end="0.946" lift="1.5" drag="1.1"/>       
+         <flap0 start="0.05" end="1" lift="1.7" drag="1.5"/>       
 
          <control-input control="FLAP0" axis="/controls/flight/elevator" invert="true"/>
          <control-input control="FLAP0" axis="/controls/flight/elevator-trim" invert="true"/>      
@@ -96,11 +91,11 @@
   </hstab>
 
   <!-- Right winglet -->
-  <vstab x="-4.54" y="-3.78" z="-0.25" 
-         sweep="15" 
+  <vstab x="-1.948" y="-3.78" z="-0.164" 
          chord="0.674" 
-         taper="0.30" 
-         length="1.41">
+         length="1.41"
+         sweep="18" 
+         taper="0.40">
          <stall aoa="27" width="10" peak="1.5" />
          <flap0  start="0.3" end="0.9"  lift="1.2" drag="1.3"/>
          <control-input control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
@@ -109,11 +104,11 @@
   </vstab>
 
   <!-- Left winglet -->
-  <vstab x="-4.54" y="3.78" z="-0.25" 
-         sweep="15" 
+  <vstab x="-1.948" y="3.78" z="-0.164" 
          chord="0.674" 
-         taper="0.30" 
-         length="1.41">
+         length="1.41"
+         sweep="18" 
+         taper="0.40">
          <stall aoa="27" width="10" peak="1.5" />
          <flap0  start="0.3" end="0.9"  lift="1.2" drag="1.3"/>
          <control-input control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
@@ -123,7 +118,7 @@
 
   <!-- Wood propeller -->
   <propeller x="-1.61" y="0" z="0.01"
-             radius="0.875"
+             radius="0.815"
              mass="34" 
              moment="3.74"
              cruise-speed="161" 
@@ -142,7 +137,6 @@
                              displacement="235" 
                              compression="6.6"/>
              <actionpt x="-1.61" y="0.0" z="0.01"/>
-
              <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/> 
              <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
              <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
@@ -153,7 +147,7 @@
   <gear x="2.20" y="0" z="-1.0"
 	compression="1.2">
   </gear>
-  <gear x="1.993" y="0.0" z="-1.1999" 
+  <gear x="1.993" y="0.0" z="-1.199" 
         compression="0.15"
         retract-time="5">
         <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-0.5" dst1="0.5"/>
@@ -165,33 +159,35 @@
   </gear>
 
   <!-- Left wheel -->
-  <gear x="-0.39" y="0.91" z="-1.1999" 
+  <gear x="-0.39" y="0.708" z="-1.199" 
         compression="0.1">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   </gear>
 
   <!-- Right wheel -->
-  <gear x="-0.39" y="-0.91" z="-1.1999" 
+  <gear x="-0.39" y="-0.708" z="-1.199" 
         compression="0.1">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   </gear>
 
-  <!-- Left and right fuel tanks. 26 US Gallon (98.42 litres each) @ 0.72 kg/l 
+  <!-- 
+       Left and right fuel tanks. 26 US Gallon (98.42 litres each) @ 0.72 kg/l 
        Fuel @ F.S. 104.5
    -->
 
-  <tank x="-0.39" y="0.5934" z="-0.04" capacity="155"/>
-  <tank x="-0.39" y="-0.5934" z="-0.04" capacity="155"/>
+  <tank x="-0.39" y="0.593" z="-0.04" capacity="155"/>
+  <tank x="-0.39" y="-0.593" z="-0.04" capacity="155"/>
 
-  <!-- C.G should be between FS 97 (FW limit) and FS 104 (Aft limit) 
-    This is x=-0.04 and x=-0.22 (By 3D model coordinate system)
+  <!-- 
+       C.G should be between FS 97 (FW limit) and FS 104 (Aft limit) 
+       This is x=-0.04 and x=-0.22 (By 3D model coordinate system)
   -->
-  <ballast x="1.5" y="0.000" z="-0.2511" mass="20"/>
+  <ballast x="-2.200" y="0" z="-0.251" mass="20"/>
   <!-- The pilot Wt @ F.S. 59 -->
-  <ballast x="0.93" y="0.000" z="-0.2511" mass="160"/>
+  <ballast x=" 0.930" y="0" z="-0.251" mass="160"/>
   <!-- The passengger Wt @ F.S. 103  -->
-  <ballast x="-0.1974" y="0.000" z="-0.2511" mass="150"/>
+  <ballast x="-0.197" y="0" z="-0.251" mass="150"/>
 
 </airplane>
