@@ -249,11 +249,11 @@
 
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/instruments.xml</path>
-      <offsets>
-	<x-m>  0.014 </x-m>
-	<y-m>  0.125 </y-m>
-	<z-m>  0.185 </z-m>
-      </offsets>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.125 </y-m>
+      <z-m> 0.185 </z-m>
+    </offsets>
   </model>
 
   <model>
@@ -279,6 +279,15 @@
     <offsets>
       <x-m> 0.014 </x-m>
       <y-m> 0.155 </y-m>
+      <z-m> 0.185 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/switches/landing-lights.xml</path>
+    <offsets>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.140 </y-m>
       <z-m> 0.185 </z-m>
     </offsets>
   </model>

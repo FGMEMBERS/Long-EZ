@@ -28,13 +28,17 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
+      <generic> 
+        <int type="int">0</int>  <!-- 0 immat -->
+        <int type="int">0</int>  <!-- 1 immat -->
+        <int type="int">0</int>  <!-- 2 immat -->
+        <int type="int">0</int>  <!-- 3 immat -->
+        <int type="int">0</int>  <!-- 4 immat -->
+        <int type="int">0</int>  <!-- 5 immat -->
+        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 7 color -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
     </multiplay>
 
@@ -62,13 +66,14 @@
       <line>______________________________________________</line>
       <line></line>
       <line>Switches</line>
-      <line>(1)  (2)  (3)  (4)  (5)</line>
+      <line>(1)  (2)  (3)  (4)  (5)  (6)</line>
       <line></line>
       <line>1: Master</line>
       <line>2: Generator</line>
       <line>3: Instruments</line>
       <line>4: Spare</line>
-      <line>5: Lights</line>
+      <line>5: Landing lights</line>
+      <line>6: Lights</line>
       <line></line>
       <line>Engine Start                             Climb/Cruise</line>
       <line>____________                             ____________</line>

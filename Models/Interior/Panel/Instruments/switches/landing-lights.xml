@@ -2,47 +2,48 @@
 
 <PropertyList>
 
- <path>fuel.ac</path>
+  <path>switch.ac</path>
 
   <animation>
-    <object-name>fuelcock</object-name>
-  </animation>
-<!--
-  <animation>
     <type>material</type>
-    <object-name>fuelcock</object-name>
+    <object-name>Switch</object-name>
+    <object-name>Circle</object-name>
+    <object-name>SwitchNut</object-name>
+    <object-name>SwitchRot</object-name>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
     </emission>
   </animation>
--->
+
   <animation>
     <type>pick</type>
     <visible>true</visible>
-    <object-name>fuelcock</object-name>
+    <object-name>Switch</object-name>
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-	<property>consumables/fuel/tank-selector</property>
-        <!--<value type="bool">true</value>-->
+        <property>controls/switches/landing-light</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
       </binding>
     </action>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>fuelcock</object-name>
-    <property>consumables/fuel/tank-selector</property>
-    <factor>90</factor>
+    <object-name>Switch</object-name>
+    <property>controls/switches/landing-light</property>
+    <factor> 35 </factor>
     <axis>
-      <x> -1 </x>
-      <y>  0 </y>
+      <x>  0 </x>
+      <y> -1 </y>
       <z>  0 </z>
     </axis>
   </animation>

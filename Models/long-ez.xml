@@ -580,5 +580,51 @@
     </offsets>
   </model>
 
+  <!-- Wing light cone -->
+  <model>
+    <name>Landing-Light-Left</name>
+    <path>Aircraft/Long-EZ/Models/lights/light-cone.xml</path>
+    <offsets>
+      <x-m>        0.576 </x-m>
+      <y-m>       -1.438 </y-m>
+      <z-m>       -0.032 </z-m>
+      <pitch-deg> -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Landing-Light-Right</name>
+    <path>Aircraft/Long-EZ/Models/lights/light-cone.xml</path>
+    <offsets>
+      <x-m>        0.576 </x-m>
+      <y-m>        1.438 </y-m>
+      <z-m>       -0.032 </z-m>
+      <pitch-deg> -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>AllWingLight</name>
+    <object-name>Landing-Light-Left</object-name>
+    <object-name>Landing-Light-Right</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>AllWingLight</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>controls/switches/landing-light</property>
+          <value> 1 </value>
+        </equals>
+        <equals>
+          <property>controls/electric/battery-switch</property>
+          <value> 1 </value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+
 </PropertyList>
 

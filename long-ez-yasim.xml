@@ -47,25 +47,28 @@
   <fuselage ax=" 2.550" ay="0" az="-0.303" bx="-1.575" by="0" bz="-0.040" width="0.77" taper="0.50" midpoint="0.50"/>
 
   <!-- Wing based on Eppler 1230 -->
-  <!--
-  <wing x="-0.64" y="0.5934" z="-0.040"  
-        chord="1.6881" 
-  -->
-  <wing x="-0.171" y="0.293" z="-0.040"  
-        chord="2.40" 
-        length="3.84"
-        taper="0.25"
+  <mstab x="-0.171" y="0.293" z="-0.040"  
+         chord="2.40" 
+         length="1.4"
+         taper="0.45"
+         twist="-2.7"
+         sweep="38"
+         camber="0.2">
+         <stall aoa="20" width="3" peak="1.5"/>
+  </mstab>
+ 
+  <wing x="-1.029" y="1.399" z="-0.040"  
+        chord="1.10" 
+        length="2.5"
+        taper="0.45"
         twist="-2.7"
-        sweep="25"
-        camber="0.088">
+        sweep="18">
         <stall aoa="20" width="3" peak="1.5"/>
-        <flap1 start="0.33" end="0.76" lift="1.5" drag="1.1"/>
-	<spoiler start="0" end="1" lift="1.0" drag="9.0"/>
-	<control-input axis="/controls/flight/speedbrake" control="SPOILER"/>
-	<control-output control="SPOILER" prop="/surface-positions/speedbrake-pos-norm"/>
-	<control-speed control="SPOILER" transition-time="3"/>
+        <flap1 start="0" end="0.61" lift="1.5" drag="1.1"/>
+
         <control-input control="FLAP1" split="true" axis="/controls/flight/aileron"/>
         <control-input control="FLAP1" split="true" axis="/controls/flight/aileron-trim"/>        
+
         <control-output control="FLAP1" prop="/surface-positions/left-aileron-pos-norm" side="left"/>
         <control-output control="FLAP1" prop="/surface-positions/right-aileron-pos-norm" side="right"/> 
   </wing>

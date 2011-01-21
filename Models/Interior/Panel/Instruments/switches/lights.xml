@@ -34,8 +34,8 @@
 	<property>controls/lighting/panel-norm</property>
       </binding>
       <binding>
-	      <command>property-toggle</command>
-	      <property>controls/lighting/instruments-norm</property>
+        <command>property-toggle</command>
+        <property>controls/lighting/instruments-norm</property>
       </binding>
       <binding>
         <command>property-assign</command>
@@ -70,7 +70,7 @@
     <object-name>Switch</object-name>
     <property>controls/lighting/nav-lights</property>
     <property>controls/lighting/instruments-norm</property>
-	<property>controls/lighting/panel-norm</property>
+    <property>controls/lighting/panel-norm</property>
     <factor>22.5</factor>
     <axis>
       <x>  0 </x>

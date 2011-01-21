@@ -6,43 +6,44 @@ Syd Adams
 
 <PropertyList>
 
-    <path>kns80.ac</path>
+  <path>kns80.ac</path>
 
-    <animation>
-        <type>material</type>
-        <object-name>VOR.btn</object-name>
-        <object-name>RNAV.btn</object-name>
-        <object-name>HOLD.btn</object-name>
-        <object-name>USE.btn</object-name>
-        <object-name>DSP.btn</object-name>
-        <object-name>DATA.btn</object-name>
-        <object-name>KNS80.volume</object-name>
-        <object-name>KNS80.freq</object-name>
-        <emission>
-        <red>0.028</red>
-            <green>0.014</green>
-            <blue>0.007</blue>
-            <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-        </emission>
-    </animation>
+  <animation>
+    <type>material</type>
+    <object-name>VOR.btn</object-name>
+    <object-name>RNAV.btn</object-name>
+    <object-name>HOLD.btn</object-name>
+    <object-name>USE.btn</object-name>
+    <object-name>DSP.btn</object-name>
+    <object-name>DATA.btn</object-name>
+    <object-name>KNS80.volume</object-name>
+    <object-name>KNS80.freq</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+    </emission>
+  </animation>
 
-    <animation>
-        <name>dme-on</name>
-        <object-name>nm.101</object-name>
-        <object-name>nm.102</object-name>
-        <object-name>nm.103</object-name>
-        <object-name>kt.101</object-name>
-        <object-name>kt.102</object-name>
-        <object-name>kt.103</object-name>
-        <object-name>min.101</object-name>
-        <object-name>min.102</object-name>
-    </animation>
+  <animation>
+    <name>dme-on</name>
+    <object-name>nm.101</object-name>
+    <object-name>nm.102</object-name>
+    <object-name>nm.103</object-name>
+    <object-name>kt.101</object-name>
+    <object-name>kt.102</object-name>
+    <object-name>kt.103</object-name>
+    <object-name>min.101</object-name>
+    <object-name>min.102</object-name>
+  </animation>
 
-    <animation>
-        <name>illumination</name>
-        <object-name>annun.nm</object-name>
-        <object-name>use.digit</object-name>
-    </animation>
+  <animation>
+    <name>illumination</name>
+    <object-name>annun.nm</object-name>
+    <object-name>use.digit</object-name>
+  </animation>
 
     <animation>
         <name>frequencies</name>
