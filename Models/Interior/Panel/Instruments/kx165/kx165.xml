@@ -15,80 +15,79 @@
     <object-name>Nav.pull</object-name>
     <object-name>Nav.ident</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
     </emission>
   </animation>
 
 
-    <animation>
-        <name>Com-led</name>
-        <object-name>C-use</object-name>
-        <object-name>C-use.001</object-name>
-        <object-name>C-use.002</object-name>
-        <object-name>C-use.003</object-name>
-        <object-name>C-use.004</object-name>
-        <object-name>C-use.005</object-name>
-        <object-name>C-stby</object-name>
-        <object-name>C-stby.001</object-name>
-        <object-name>C-stby.002</object-name>
-        <object-name>C-stby.003</object-name>
-        <object-name>C-stby.004</object-name>
-        <object-name>C-stby.005</object-name>
-        <object-name>N-use</object-name>
-        <object-name>N-use.001</object-name>
-        <object-name>N-use.002</object-name>
-        <object-name>N-use.003</object-name>
-        <object-name>N-use.004</object-name>
-        <object-name>N-use.005</object-name>
-    </animation>
+  <animation>
+    <name>Com-led</name>
+    <object-name>C-use</object-name>
+    <object-name>C-use.001</object-name>
+    <object-name>C-use.002</object-name>
+    <object-name>C-use.003</object-name>
+    <object-name>C-use.004</object-name>
+    <object-name>C-use.005</object-name>
+    <object-name>C-stby</object-name>
+    <object-name>C-stby.001</object-name>
+    <object-name>C-stby.002</object-name>
+    <object-name>C-stby.003</object-name>
+    <object-name>C-stby.004</object-name>
+    <object-name>C-stby.005</object-name>
+    <object-name>N-use</object-name>
+    <object-name>N-use.001</object-name>
+    <object-name>N-use.002</object-name>
+    <object-name>N-use.003</object-name>
+    <object-name>N-use.004</object-name>
+    <object-name>N-use.005</object-name>
+  </animation>
 
-    <animation>
-        <name>Nav-led</name>
-        <object-name>N-stby</object-name>
-        <object-name>N-stby.001</object-name>
-        <object-name>N-stby.002</object-name>
-        <object-name>N-stby.003</object-name>
-        <object-name>N-stby.004</object-name>
-        <object-name>N-stby.005</object-name>
-    </animation>
+  <animation>
+    <name>Nav-led</name>
+    <object-name>N-stby</object-name>
+    <object-name>N-stby.001</object-name>
+    <object-name>N-stby.002</object-name>
+    <object-name>N-stby.003</object-name>
+    <object-name>N-stby.004</object-name>
+    <object-name>N-stby.005</object-name>
+  </animation>
 
-    <animation>
-        <name>Rad-display</name>
-        <object-name>Rad.001</object-name>
-        <object-name>Rad.002</object-name>
-        <object-name>Rad.003</object-name>
-    </animation>
+  <animation>
+    <name>Rad-display</name>
+    <object-name>Rad.001</object-name>
+    <object-name>Rad.002</object-name>
+    <object-name>Rad.003</object-name>
+  </animation>
 
-    <animation>
-        <type>select</type>
-        <object-name>Com-led</object-name>
-        <condition>
-            <greater-than>
-                <property>systems/electrical/volts</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Com-led</object-name>
+    <condition>
+      <greater-than>
+        <property>systems/electrical/volts</property>
+        <value>5</value>
+      </greater-than>
+    </condition>
+  </animation>
 
-    <animation>
-        <type>select</type>
-        <object-name>Nav-led</object-name>
-        <condition>
-            <and>
-                <greater-than>
-                    <property>systems/electrical/volts</property>
-                    <value>5</value>
-                </greater-than>
-                <not>
-                    <property>instrumentation/nav/rad-btn</property>
-                </not>
-            </and>
-        </condition>
-    </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Nav-led</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>systems/electrical/volts</property>
+          <value>5</value>
+        </greater-than>
+        <not>
+          <property>instrumentation/nav/rad-btn</property>
+        </not>
+      </and>
+    </condition>
+  </animation>
 
     <animation>
         <type>select</type>

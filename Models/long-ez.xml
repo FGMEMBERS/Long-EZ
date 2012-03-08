@@ -7,9 +7,23 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Long-EZ/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
@@ -137,6 +151,42 @@
     <object-name>verre</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.100 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- Cranking effects -->
+  <model>
+    <path>Aircraft/Long-EZ/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  1.444 </x-m>
+      <y-m> -0.264 </y-m>
+      <z-m> -0.152 </z-m>
+      <pitch-deg>  45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Long-EZ/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  1.444 </x-m>
+      <y-m>  0.264 </y-m>
+      <z-m> -0.152 </z-m>
+      <pitch-deg>  45 </pitch-deg>
+    </offsets>
+  </model>
+
   <!-- Effets sur le sol -->
   <!-- Roue avant -->
   <model>
@@ -166,25 +216,6 @@
       <y-m>  0.708 </y-m>
       <z-m> -1.199 </z-m>
     </offsets>
-  </model>
-
-  <!-- Interieur -->
-  <model>
-    <path>Aircraft/Long-EZ/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Une ombre pour OSG -->
-  <model>
-    <name>shadowOSG</name>
-    <path>Aircraft/Long-EZ/Models/shadow.xml</path>
   </model>
 
   <!-- L'hélice --> 
@@ -260,10 +291,10 @@
     <property>surface-positions/rudder-pos-norm</property>
     <factor> -30 </factor>
     <axis>
-      <x1-m>  2.067 </x1-m>
+      <x1-m>  2.098 </x1-m>
       <y1-m> -3.786 </y1-m>
-      <z1-m>  0.008 </z1-m>
-      <x2-m>  2.385 </x2-m>
+      <z1-m> -0.006 </z1-m>
+      <x2-m>  2.399 </x2-m>
       <y2-m> -3.786 </y2-m>
       <z2-m>  0.984 </z2-m>
     </axis>
@@ -275,12 +306,12 @@
     <property>surface-positions/rudder-pos-norm</property>
     <factor> -30 </factor>
     <axis>
-      <x1-m> 2.067 </x1-m>
-      <y1-m> 3.786 </y1-m>
-      <z1-m> 0.008 </z1-m>
-      <x2-m> 2.385 </x2-m>
-      <y2-m> 3.786 </y2-m>
-      <z2-m> 0.984 </z2-m>
+      <x1-m>  2.098 </x1-m>
+      <y1-m>  3.786 </y1-m>
+      <z1-m> -0.006 </z1-m>
+      <x2-m>  2.399 </x2-m>
+      <y2-m>  3.786 </y2-m>
+      <z2-m>  0.984 </z2-m>
     </axis>
   </animation>
 
@@ -291,9 +322,9 @@
     <property>surface-positions/elevator-pos-norm</property>
     <factor> -20 </factor>
     <center>
-      <x-m> -1.685 </x-m>
+      <x-m> -1.669 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.030 </z-m>
+      <z-m>  0.010 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -309,12 +340,12 @@
     <property>surface-positions/left-aileron-pos-norm</property>
     <factor> -20 </factor>
     <axis>
-      <x1-m>  1.365 </x1-m>
-      <y1-m> -1.349 </y1-m>
-      <z1-m> -0.038 </z1-m>
-      <x2-m>  1.729 </x2-m>
-      <y2-m> -2.861 </y2-m>
-      <z2-m> -0.034 </z2-m>
+      <x1-m>  1.378 </x1-m>
+      <y1-m> -1.347 </y1-m>
+      <z1-m> -0.053 </z1-m>
+      <x2-m>  1.739 </x2-m>
+      <y2-m> -2.860 </y2-m>
+      <z2-m> -0.043 </z2-m>
     </axis>
   </animation>
 
@@ -324,12 +355,12 @@
     <property>surface-positions/right-aileron-pos-norm</property>
     <factor> -20 </factor>
     <axis>
-      <x1-m>  1.729 </x1-m>
-      <y1-m>  2.861 </y1-m>
-      <z1-m> -0.034 </z1-m>
-      <x2-m>  1.365 </x2-m>
-      <y2-m>  1.349 </y2-m>
-      <z2-m> -0.038 </z2-m>
+      <x1-m>  1.739 </x1-m>
+      <y1-m>  2.860 </y1-m>
+      <z1-m> -0.043 </z1-m>
+      <x2-m>  1.378 </x2-m>
+      <y2-m>  1.347 </y2-m>
+      <z2-m> -0.053 </z2-m>
     </axis>
   </animation>
 
