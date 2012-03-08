@@ -6,15 +6,16 @@
 
   <animation>
     <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>click-offset-L</object-name>
+    <object-name>click-offset-R</object-name>
+    <object-name>click-bug-L</object-name>
+    <object-name>click-bug-R</object-name>
     <object-name>face</object-name>
     <object-name>front</object-name>
     <object-name>HdgBug</object-name>
     <object-name>OBS-Knob</object-name>
-    <object-name>clic-offset-L</object-name>
-    <object-name>clic-offset-R</object-name>
     <object-name>Hdg-Knob</object-name>
-    <object-name>clic-bug-L</object-name>
-    <object-name>clic-bug-R</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -33,16 +34,16 @@
 
   <animation>
     <type>material</type>
+    <object-name>face</object-name>
     <object-name>front</object-name>
     <object-name>HdgBug</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
     </emission>
-  </animation>
+  </animation>    
 
   <animation>
     <type>material</type>
@@ -59,7 +60,7 @@
   <animation>
     <type>rotate</type>
     <object-name>face</object-name>
-    <property>/instrumentation/heading-indicator/indicated-heading-deg</property>
+    <property>instrumentation/heading-indicator/indicated-heading-deg</property>
     <factor>-1</factor>
     <axis>
       <x> -1 </x>
@@ -71,7 +72,7 @@
   <animation>
     <type>rotate</type>
     <object-name>HdgBug</object-name>
-    <property>/instrumentation/heading-indicator/indicated-heading-deg</property>
+    <property>instrumentation/heading-indicator/indicated-heading-deg</property>
     <factor>-1</factor>
     <axis>
       <x> -1 </x>
@@ -83,7 +84,7 @@
   <animation>
     <type>rotate</type>
     <object-name>HdgBug</object-name>
-     <property>/autopilot/settings/heading-bug-deg</property>
+      <property>autopilot/settings/heading-bug-deg</property>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -91,7 +92,7 @@
     </axis>
   </animation>
 
-  <!--     Heading Bug control    -->
+  <!-- Heading Bug control -->
   <animation>
     <type>pick</type>
     <object-name>click-bug-L</object-name>
@@ -102,7 +103,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
+        <property>autopilot/settings/heading-bug-deg</property>
         <step>-1</step>
         <min>0</min>
         <max>360</max>
@@ -115,7 +116,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
+        <property>autopilot/settings/heading-bug-deg</property>
         <step>-5</step>
         <min>0</min>
         <max>360</max>
@@ -134,7 +135,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
+        <property>autopilot/settings/heading-bug-deg</property>
         <step>1</step>
         <min>0</min>
         <max>360</max>
@@ -147,7 +148,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
+        <property>autopilot/settings/heading-bug-deg</property>
         <step>5</step>
         <min>0</min>
         <max>360</max>
@@ -156,7 +157,7 @@
     </action>
   </animation>   
 
-  <!--             Heading Offset             -->
+  <!-- Heading Offset -->
   <animation>
     <type>pick</type>
     <object-name>click-offset-L</object-name>
@@ -167,7 +168,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <property>instrumentation/heading-indicator/offset-deg</property>
         <step>-1</step>
         <min>0</min>
         <max>360</max>
@@ -180,7 +181,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <property>instrumentation/heading-indicator/offset-deg</property>
         <step>-5</step>
         <min>0</min>
         <max>360</max>
@@ -199,7 +200,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <property>instrumentation/heading-indicator/offset-deg</property>
         <step>1</step>
         <min>0</min>
         <max>360</max>
@@ -212,7 +213,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <property>instrumentation/heading-indicator/offset-deg</property>
         <step>5</step>
         <min>0</min>
         <max>360</max>

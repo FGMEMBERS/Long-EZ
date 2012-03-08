@@ -19,11 +19,10 @@ Syd Adams
     <object-name>KNS80.volume</object-name>
     <object-name>KNS80.freq</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
     </emission>
   </animation>
 

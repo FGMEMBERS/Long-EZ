@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -25,11 +25,10 @@
     <object-name>PtrL</object-name>
     <object-name>PtrR</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
     </emission>
   </animation>
  
