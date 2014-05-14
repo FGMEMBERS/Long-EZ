@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>starter.ac</path>
-
+  
   <animation>
     <type>material</type>
     <object-name>SwitchNut</object-name>
@@ -16,7 +16,7 @@
       <blue>  0.25 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -46,7 +46,7 @@
       </mod-up>
     </action>
   </animation>
-
+  
   <animation>
     <type>translate</type>
     <object-name>Switch-Starter</object-name>
@@ -58,35 +58,5 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
 </PropertyList>
-<!--<animation>
-	18:11 <syd>     <type>pick</type>
-		18:11 <syd>     <visible>true</visible>
-			18:11 <syd>     <object-name>Switch-Starter</object-name>
-				18:11 <syd>     <action>
-						18:11 <syd>       <button>0</button>
-							18:11 <syd>       <repeatable>false</repeatable>
-								18:11 <syd>       <binding>
-										18:11 <syd>         <command>property-assign</command>
-										18:11 <syd>         <property>controls/switches/starter</property>
-										18:11 <syd>         <value type="int">1</value>
-										18:11 <syd>       </binding>
-										<binding>
-										18:11 <syd>         <command>nasal</command>
-										18:11 <syd>         <script>controls.startEngine(1)</script>
-										18:11 <syd>       </binding>
-										18:11 <syd>       <mod-up>
-										18:11 <syd>         <binding>
-										18:11 <syd>           <command>property-assign</command>
-										18:11 <syd>           <property>/controls/switches/starter</property>
-										18:11 <syd>           <value type="int">0</value>
-										18:11 <syd>         </binding>
-										18:11 <syd>         <binding>
-										<command>nasal</command>
-										18:12 <syd>           <script>controls.startEngine(0)</script>
-										18:12 <syd>         </binding>
-										18:12 <syd>       </mod-up>
-										18:12 <syd>     </action>
-										18:12 <syd>   </animation>
--->

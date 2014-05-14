@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
+  <sim include="Systems/views.xml">
 
+    <description>Rutan Long EZ</description>
     <author>Emmanuel BARANGER (3D/FDM), Daniel MORTARA (FDM), Victhor FOSTER (Panel)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
@@ -29,28 +30,35 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
-        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
-        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
-        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
-        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
-        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
-        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
-        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
-        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+        <int n="0"    type="int">  0 </int>                                         <!-- 0 immat -->
+        <int n="1"    type="int">  0 </int>                                         <!-- 1 immat -->
+        <int n="2"    type="int">  0 </int>                                         <!-- 2 immat -->
+        <int n="3"    type="int">  0 </int>                                         <!-- 3 immat -->
+        <int n="4"    type="int">  0 </int>                                         <!-- 4 immat -->
+        <int n="5"    type="int">  0 </int>                                         <!-- 5 immat -->
+        <int n="6"    type="bool"> 1 </int>                                         <!-- 6 smoke/bomb/torpedo -->
+        <int n="7"    type="int">  0 </int>                                         <!-- 7 color -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/gear/gear[0]/wow/"/>
+        <float n="7"  alias="/gear/gear[1]/wow/"/>
+        <float n="8"  alias="/gear/gear[2]/wow/"/>
+        <float n="9"  alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
       </generic>
     </multiplay>
-
+    
     <systems>
       <autopilot>
-        <path>Aircraft/Long-EZ/Nasal/autopilot.xml</path>
+        <path>Aircraft/Long-EZ/Systems/autopilot.xml</path>
       </autopilot>
       <electrical>
         <!-- null electrical system path here so we can use a nasal based -->
@@ -59,54 +67,7 @@
       </electrical>
     </systems>
 
-    <help>
-      <title>Rutan Long EZ</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close canopy</desc>
-      </key>
-      <key>
-        <name>Ctrl-b</name>
-        <desc>SpeedBrake</desc>
-      </key>
-      <line>______________________________________________</line>
-      <line></line>
-      <line>Switches</line>
-      <line>(1)  (2)  (3)  (4)  (5)  (6)</line>
-      <line></line>
-      <line>1: Master</line>
-      <line>2: Generator</line>
-      <line>3: Instruments</line>
-      <line>4: Spare</line>
-      <line>5: Landing lights</line>
-      <line>6: Lights</line>
-      <line></line>
-      <line>Engine Start                             Climb/Cruise</line>
-      <line>____________                             ____________</line>
-      <line>Mixture - RICH                           Gear - UP</line>
-      <line>Throttle - Primed and Cracked            Mixture - Lean as Required</line>
-      <line>Master Switch - ON                       Fuel Selector - Balance Management</line>
-      <line>Magneto - Left Only (Start)</line>
-      <line>Start Engine</line>
-      <line>Throttle - IDLE                          Descent/Landing</line>
-      <line>Magneto - Both ON                        _______________</line>
-      <line>                                         Breakers - IN</line>
-      <line>                                         Fuel Selector - Fullest Tank</line>
-      <line>Before Takeoff                           Mixture - Rich</line>
-      <line>______________                           Gear - Down below 110 kts</line>
-      <line>Fuel Selector - Fullest Tank             SpeedBrake - Deployed as Required</line>
-      <line>SpeedBrake - UP</line>
-      <line>Breakers - IN</line>
-      <line>Generator - ON                           ShutDown</line>
-      <line>Lights - As Required                     ________</line>
-      <line>                                         SpeedBrake - UP</line>
-      <line>                                         Lights - OFF as Required</line>
-      <line>                                         Instruments - OFF</line>
-      <line>                                         Mixture - Idle Cutoff</line>
-      <line>                                         Magneto - Both OFF</line>
-      <line>                                         Generator - OFF</line>
-      <line>                                         Master Switch - OFF</line>
-    </help>
+    <help include="Systems/help.xml"/>
 
     <menubar include="Dialogs/long-ez-menu.xml"/>
 
@@ -127,7 +88,7 @@
   </controls> 
 
   <input>
-    <keyboard include="Nasal/long-ez-keyboard.xml"/>
+    <keyboard include="Systems/long-ez-keyboard.xml"/>
   </input>
 
   <nasal>

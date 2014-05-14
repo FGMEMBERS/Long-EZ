@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
-  <!-- -->
+  
+  <!-- ASI -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
     <offsets>
@@ -35,11 +35,11 @@
     <offsets>
       <x-m>  0.014 </x-m>
       <y-m> -0.166 </y-m>
-      <z-m>  0.232 </z-m>
+      <z-m>  0.169 </z-m>
     </offsets>
   </model>
 
-  <!-- -->
+  <!-- AI -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
     <offsets>
@@ -72,11 +72,11 @@
     <offsets>
       <x-m>  0.014 </x-m>
       <y-m> -0.077 </y-m>
-      <z-m>  0.232 </z-m>
+      <z-m>  0.169 </z-m>
     </offsets>
   </model>
 
-  <!-- -->
+  <!-- ALT -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
     <offsets>
@@ -109,11 +109,11 @@
     <offsets>
       <x-m> 0.014 </x-m>
       <y-m> 0.014 </y-m>
-      <z-m> 0.232 </z-m>
+      <z-m> 0.169 </z-m>
     </offsets>
   </model>
 
-  <!-- -->
+  <!-- KI206 -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
     <offsets>
@@ -141,16 +141,7 @@
     </offsets>
   </model>
 
-  <model>
-    <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
-    <offsets>
-      <x-m> 0.014 </x-m>
-      <y-m> 0.120 </y-m>
-      <z-m> 0.214 </z-m>
-    </offsets>
-  </model>
-
-  <!-- -->
+  <!-- RPM -->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
     <offsets>
@@ -187,7 +178,7 @@
     </offsets>
   </model>
 
-  <!-- -->
+  <!-- HI-->
   <model>
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
     <offsets>
@@ -219,8 +210,8 @@
     <path>Aircraft/Long-EZ/Models/Interior/Panel/Instruments/divers/vis.xml</path>
     <offsets>
       <x-m>  0.014 </x-m>
-      <y-m> -0.076 </y-m>
-      <z-m>  0.083 </z-m>
+      <y-m> -0.069 </y-m>
+      <z-m>  0.091 </z-m>
     </offsets>
   </model>
 

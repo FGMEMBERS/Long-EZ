@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -8,19 +8,16 @@
     <object-name>fusible</object-name>
     <object-name>bague</object-name>
     <object-name>ecrou</object-name>
-
-    <object-name>vitre</object-name>
   </animation>
 
   <animation>
     <type>material</type>
     <object-name>fusible</object-name>
     <emission>
-      <red>   0.9 </red>
-      <green> 0.5 </green>
-      <blue>  0.2 </blue>
-<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 

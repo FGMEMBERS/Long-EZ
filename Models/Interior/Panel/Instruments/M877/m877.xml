@@ -1,9 +1,69 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>m877.ac</path>
-
+  
+  <animation>
+    <object-name>M877.fond</object-name>
+    <object-name>M877.face</object-name>
+    <object-name>SEL.btn</object-name>
+    <object-name>SET.btn</object-name>
+    <object-name>CTL.btn</object-name>
+    <object-name>M877.display</object-name>
+    
+    <object-name>HR.001</object-name>
+    <object-name>HR.002</object-name>
+    <object-name>M877.colon</object-name>
+    <object-name>MN.001</object-name>
+    <object-name>MN.002</object-name>
+    <object-name>gmt</object-name>
+    <object-name>lt</object-name>
+    <object-name>ft</object-name>
+    <object-name>et</object-name>
+    
+    <object-name>M877.vitre</object-name>
+  </animation>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Long-EZ/Models/Effects/Glass/glass</inherits-from>
+    <object-name>M877.vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>HR.001</object-name>
+    <object-name>HR.002</object-name>
+    <object-name>M877.colon</object-name>
+    <object-name>MN.001</object-name>
+    <object-name>MN.002</object-name>
+    <object-name>gmt</object-name>
+    <object-name>lt</object-name>
+    <object-name>ft</object-name>
+    <object-name>et</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>M877.face</object-name>
+    <object-name>SEL.btn</object-name>
+    <object-name>SET.btn</object-name>
+    <object-name>CTL.btn</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+  
   <animation>
     <type>select</type>
     <object-name>M877.colon</object-name>
@@ -11,7 +71,7 @@
       <property>instrumentation/clock/m877/power</property>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>gmt</object-name>
@@ -22,7 +82,7 @@
       </equals>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>lt</object-name>
@@ -33,7 +93,7 @@
       </equals>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>ft</object-name>
@@ -44,7 +104,7 @@
       </equals>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>et</object-name>
@@ -55,7 +115,7 @@
       </equals>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>HR.001</object-name>
@@ -63,7 +123,7 @@
       <property>instrumentation/clock/m877/digit[3]</property>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>HR.002</object-name>
@@ -71,7 +131,7 @@
       <property>instrumentation/clock/m877/digit[2]</property>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>MN.001</object-name>
@@ -79,7 +139,7 @@
       <property>instrumentation/clock/m877/digit[1]</property>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>MN.002</object-name>
@@ -87,7 +147,7 @@
       <property>instrumentation/clock/m877/digit[0]</property>
     </condition>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>HR.001</object-name>
@@ -100,7 +160,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>HR.002</object-name>
@@ -113,7 +173,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>MN.001</object-name>
@@ -126,7 +186,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>MN.002</object-name>
@@ -139,7 +199,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- -hotspots -->
   <animation>
     <type>pick</type>
@@ -153,7 +213,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>CTL.btn</object-name>
@@ -172,7 +232,7 @@
       </mod-up>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>SET.btn</object-name>
@@ -185,5 +245,5 @@
       </binding>
     </action>
   </animation>
-
+  
 </PropertyList>

@@ -12,7 +12,7 @@
         m.et_running=0;
         m.et_elapsed=0;
         m.ft_start_time=0;
-	m.ft_running=0;
+  m.ft_running=0;
         m.modetext =["GMT","LT","FT","ET"];
         m.M877 = props.globals.initNode(prop1);
         m.fmeter_sec=m.M877.initNode("flight-meter-sec",0,"DOUBLE");
@@ -37,17 +37,17 @@
     },
 #### flightmeter ####
     fmeter_control : func(){
-	var ias =getprop("velocities/airspeed-kt");
+  var ias =getprop("velocities/airspeed-kt");
         if(ias>30){
-		if(me.ft_running==0){
-			me.ft_running=1;
-			me.fmeter.start();
-		}
-	}elsif(ias<30){
-		if(me.ft_running==1){
-			me.ft_running=0;
-			me.fmeter.stop();
-		}
+    if(me.ft_running==0){
+      me.ft_running=1;
+      me.fmeter.start();
+    }
+  }elsif(ias<30){
+    if(me.ft_running==1){
+      me.ft_running=0;
+      me.fmeter.stop();
+    }
         }
     },
 #### displayed mode  ####
@@ -145,25 +145,25 @@
         var min = int(ftmin);
         var ftsec= (ftmin- min) *60;
         if(fthour <1){
-		me.FT_HR.setValue(min);
-		me.FT_MN.setValue(ftsec);
+    me.FT_HR.setValue(min);
+    me.FT_MN.setValue(ftsec);
         }else{
-		me.FT_HR.setValue(hr);
-		me.FT_MN.setValue(min);
+    me.FT_HR.setValue(hr);
+    me.FT_MN.setValue(min);
         }
     },
 
 #### update clock  ####
     update_clock : func{
         var pwr=me.power.getValue();
-	me.fmeter_control();
+  me.fmeter_control();
         if(me.set_mode==0){
             pwr=1-pwr;
         }else{
             pwr=1;
         }
         me.power.setValue(pwr);
-	
+  
         if(me.flip==0){
             me.update_ET();
         }else{

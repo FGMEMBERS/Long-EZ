@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Rutan Long EZ</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close canopy</desc>
+  </key>
+  <key>
+    <name>Ctrl-b</name>
+    <desc>SpeedBrake</desc>
+  </key>
+  <line>______________________________________________</line>
+  <line></line>
+  <line>Switches</line>
+  <line>(1)  (2)  (3)  (4)  (5)  (6)</line>
+  <line></line>
+  <line>1: Master</line>
+  <line>2: Generator</line>
+  <line>3: Instruments</line>
+  <line>4: Spare</line>
+  <line>5: Landing lights</line>
+  <line>6: Lights</line>
+  <line></line>
+  <line>Engine Start                             Climb/Cruise</line>
+  <line>____________                             ____________</line>
+  <line>Mixture - RICH                           Gear - UP</line>
+  <line>Throttle - Primed and Cracked            Mixture - Lean as Required</line>
+  <line>Master Switch - ON                       Fuel Selector - Balance Management</line>
+  <line>Magneto - Left Only (Start)</line>
+  <line>Start Engine</line>
+  <line>Throttle - IDLE                          Descent/Landing</line>
+  <line>Magneto - Both ON                        _______________</line>
+  <line>                                         Breakers - IN</line>
+  <line>                                         Fuel Selector - Fullest Tank</line>
+  <line>Before Takeoff                           Mixture - Rich</line>
+  <line>______________                           Gear - Down below 110 kts</line>
+  <line>Fuel Selector - Fullest Tank             SpeedBrake - Deployed as Required</line>
+  <line>SpeedBrake - UP</line>
+  <line>Breakers - IN</line>
+  <line>Generator - ON                           ShutDown</line>
+  <line>Lights - As Required                     ________</line>
+  <line>                                         SpeedBrake - UP</line>
+  <line>                                         Lights - OFF as Required</line>
+  <line>                                         Instruments - OFF</line>
+  <line>                                         Mixture - Idle Cutoff</line>
+  <line>                                         Magneto - Both OFF</line>
+  <line>                                         Generator - OFF</line>
+  <line>                                         Master Switch - OFF</line>
+  
+</PropertyList>

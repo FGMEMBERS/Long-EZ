@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!--<PropertyList include="long-ez-jsbsim-cnf.xml">-->
-<PropertyList include="long-ez-yasim-cnf.xml">
+<PropertyList include="long-ez-base.xml">
 
   <sim>
     
-    <description>Rutan Long EZ</description>
+    <description>Long EZ (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Daniel MORTARA (FDM), Victhor FOSTER (Panel)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">long-ez-yasim</aero>
     
     <rating>
       <FDM type="int">     3 </FDM>
@@ -18,4 +19,3 @@
 </sim>
 
 </PropertyList>
-

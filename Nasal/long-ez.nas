@@ -1,7 +1,5 @@
 setprop("controls/gear/brake-parking",1);
 
-
-
 setlistener("/consumables/fuel/tank-selector", func(sw){
          var pos = sw.getValue();
          #if(pos){setprop("consumables/fuel/tank[1]/selected",1)}else{setprop("consumables/fuel/tank/selected",1}
@@ -9,7 +7,6 @@ setlistener("/consumables/fuel/tank-selector", func(sw){
          setprop("/consumables/fuel/tank[1]/selected",0);
          setprop("/consumables/fuel/tank["~pos~"]/selected",1);
 },1,0);
-
 
 #controls.adjMixture = func {
 #    var running = getprop("engines/engine[0]/running");
@@ -23,12 +20,10 @@ setlistener("/consumables/fuel/tank-selector", func(sw){
 #}
 
 #var startEngine = controls.startEngine;
-controls.startEngine = func(v=1){
-        setprop("controls/engines/engine/starter",0);
-        var volts = getprop("systems/electrical/batt-volts");
-	print("Starter Volts: ",volts);
-	if (volts < 16) v=0;
-        setprop("controls/engines/engine/starter",v);
-	}
-
-
+controls.startEngine = func(v=1) {
+  setprop("controls/engines/engine/starter",0);
+  var volts = getprop("systems/electrical/batt-volts");
+  print("Starter Volts: ",volts);
+  if (volts < 16) v=0;
+    setprop("controls/engines/engine/starter",v);
+}
